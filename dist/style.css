@@ -1,0 +1,137 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none;
+  border: none;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.container {
+  padding: 1em 3em;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5);
+}
+header .logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+header .logo-section .logo-image {
+  width: 2em;
+}
+header .logo-section .logo {
+  font-size: 2rem;
+  color: #49281A;
+  font-weight: 900;
+}
+header .hamburger-menu {
+  cursor: pointer;
+}
+header .hamburger-menu .hamburger {
+  width: 3em;
+  height: 0.4em;
+  background-color: rgb(235, 230, 227);
+  border-radius: 20px;
+}
+header .hamburger-menu .hamburger:not(:last-child) {
+  margin-bottom: 0.45em;
+  transform: translateX(1em);
+}
+header::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url("/Images/pexels-toni-cuenca-585750-removebg-preview.png");
+  background-position: center center;
+  background-size: cover;
+  z-index: -1;
+  top: 0;
+  right: 0;
+}
+
+.nav-bar {
+  display: none;
+}
+
+.hero-section {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  margin-top: 5.3em;
+  padding-block: 2em;
+  height: calc(100vh - 5.3em);
+  background: linear-gradient(90deg, hsla(60deg, 3%, 6%, 0.9), hsla(0deg, 0%, 6%, 0.2)), url("/Images/jessica-lewis-Am2kjOEKADs-unsplash.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: column;
+}
+.hero-section h2 {
+  font-size: 3.8rem;
+  font-weight: 800;
+  text-transform: capitalize;
+  line-height: 1.5;
+  color: #fff;
+}
+.hero-section h2 span {
+  color: #DFB78C;
+}
+.hero-section p {
+  font-size: 1.8rem;
+  color: white;
+  line-height: 1.7;
+  text-indent: 10px;
+}
+.hero-section .btn-section {
+  display: flex;
+  gap: 4em;
+}
+.hero-section button {
+  background-color: #DFB78C;
+  color: #4b1f0e;
+}
+
+button {
+  font-size: 1.2rem;
+  width: 10em;
+  height: 3em;
+  cursor: pointer;
+  border-radius: 6px 0 6px 0;
+  text-transform: uppercase;
+  background-color: #4b1f0e;
+  color: white;
+  font-weight: 800;
+}/*# sourceMappingURL=style.css.map */

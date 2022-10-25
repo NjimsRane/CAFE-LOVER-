@@ -1,0 +1,57 @@
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    box-shadow:0 6px 12px 0 rgba(0,0,0,0.5);
+
+    .logo-section{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:0.5em;
+        
+        .logo-image{
+            width:2em;
+        }
+
+        .logo{
+            font-size:2rem;
+            color:#49281A;
+            font-weight:900;
+        }
+    }
+
+    
+    .hamburger-menu{
+        cursor: pointer;
+        .hamburger{
+            width:3em;
+            height:0.4em;
+            background-color:rgb(235, 230, 227);
+            border-radius:20px;
+
+            &:not(:last-child){
+                margin-bottom:0.45em;
+                transform:translateX(1em);
+            }
+        }
+    }
+
+    &::after{
+        content:"";
+        position: absolute;
+        height:100%;
+        width:100%;
+        background:url("/Images/pexels-toni-cuenca-585750-removebg-preview.png");
+        background-position:center center;
+        background-size:cover;
+        z-index:-1;
+        top:0;
+        right:0;
+    }
+}
