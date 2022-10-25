@@ -35,6 +35,7 @@ ul {
   position: sticky;
   top: 0;
   left: 0;
+  width: 100%;
   background-color: #fff;
 }
 .header::after {
@@ -90,7 +91,7 @@ ul {
   color: hsl(25deg, 90%, 12%);
 }
 .header .nav-bar-show {
-  height: 557px;
+  height: calc(100vh - 55px);
 }
 .header .hamburger-menu {
   cursor: pointer;
@@ -120,7 +121,7 @@ ul {
   z-index: -1;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)), url("/Images/jessica-lewis-Am2kjOEKADs-unsplash.jpg");
+  background-image: linear-gradient(-45deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.4)), url("/Images/jessica-lewis-Am2kjOEKADs-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -128,6 +129,7 @@ ul {
 
 .hero-text {
   min-height: calc(100vh - 55px);
+  z-index: -1;
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
@@ -141,13 +143,28 @@ ul {
 .hero-text h1 span {
   color: hsl(25deg, 55%, 54%);
 }
+.hero-text .social-media-links {
+  position: absolute;
+  right: 1em;
+  bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  transition: all 0.5s;
+}
+.hero-text .social-media-links img {
+  width: 1.5em;
+}
+.hero-text .social-media-links-hide {
+  z-index: -1;
+}
 
 main {
-  margin-top: 4em;
+  margin-top: 6em;
   background-color: gainsboro;
   min-height: 100vh;
 }
-main .menu h2 {
+main h2 {
   font-size: 3em;
   text-transform: capitalize;
   text-align: center;
@@ -156,15 +173,26 @@ main .menu h2 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: hsl(25deg, 90%, 12%);
 }
+main .menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: wrap;
+  flex: 1;
+}
 main .menu .card {
   display: flex;
   flex-direction: column;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
-  width: 20em;
+  width: 100%;
+  max-width: 20em;
+  margin-block-end: 2em;
+  overflow: hidden;
 }
 main .menu .card img {
   height: 15em;
   width: 100%;
+  max-width: 20em;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
@@ -212,9 +240,9 @@ main .menu .card-body button {
 }
 
 button {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
-  width: 10em;
+  width: 8em;
   height: 2em;
   margin: 0 auto;
   border-radius: 8px 0 8px 0;

@@ -1,29 +1,39 @@
 main{
-    margin-top:4em;
+    margin-top:6em;
     background-color:gainsboro;
     min-height:100vh;
+    h2{
+        font-size:3em;
+        text-transform: capitalize;
+
+        text-align:center;
+        margin-bottom:1em;
+        font-style: italic;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color:hsl(25, 90%, 12%);
+    }
 
     .menu{
+        display:flex;
+        justify-content:space-evenly;
+        align-items:center;
+        flex-flow: wrap;
+        flex:1;
         
-        h2{
-            font-size:3em;
-            text-transform: capitalize;
-
-            text-align:center;
-            margin-bottom:1em;
-            font-style: italic;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            color:hsl(25, 90%, 12%);
-        }
         .card{
             display:flex;
             flex-direction:column;
+            
             box-shadow: 0 5px 10px 0 rgba(0,0,0,0.4);
-            width:20em;
+            width:100%;
+            max-width:20em;
+            margin-block-end:2em;
+            overflow: hidden;
             
             img{
                 height:15em;
                 width:100%;
+                max-width:20em;
                 
                 object-fit:cover;
                 border-radius:10px 10px 0 0;

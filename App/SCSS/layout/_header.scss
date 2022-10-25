@@ -6,6 +6,7 @@
     position:sticky;
     top:0;
     left:0;
+    width:100%;
 
     background-color:#fff;
   
@@ -70,7 +71,7 @@
     }
 
     .nav-bar-show{
-        height: 557px;
+        height:calc(100vh - 55px);
     }
 
     .hamburger-menu{
