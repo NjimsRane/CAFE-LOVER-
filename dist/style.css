@@ -28,6 +28,13 @@ ul {
   padding: 0.5em 1.5em;
 }
 
+.ligne {
+  width: 100%;
+  height: 0.2em;
+  background-color: #999;
+  margin-block: 1em;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -168,7 +175,7 @@ main h2 {
   font-size: 3em;
   text-transform: capitalize;
   text-align: center;
-  margin-bottom: 1em;
+  margin-block: 1em;
   font-style: italic;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: hsl(25deg, 90%, 12%);
@@ -196,6 +203,10 @@ main .menu .card img {
   object-fit: cover;
   border-radius: 10px 10px 0 0;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+  transition: all 0.5s;
+}
+main .menu .card img:hover {
+  filter: brightness(0.5);
 }
 main .menu .card-body {
   display: flex;

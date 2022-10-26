@@ -2,12 +2,14 @@ main{
     margin-top:6em;
     background-color:gainsboro;
     min-height:100vh;
+
+    
     h2{
         font-size:3em;
         text-transform: capitalize;
 
         text-align:center;
-        margin-bottom:1em;
+        margin-block:1em;
         font-style: italic;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         color:hsl(25, 90%, 12%);
@@ -38,6 +40,12 @@ main{
                 object-fit:cover;
                 border-radius:10px 10px 0 0;
                 box-shadow: 0 5px 10px 0 rgba(0,0,0,0.4);
+
+                transition:all 0.5s;
+
+                &:hover{
+                    filter: brightness(0.5);
+                }
             }
         }
         .card-body{
@@ -46,7 +54,7 @@ main{
             align-items:center;
             background-color:white;
             padding:1em;
-
+            
             h3{
                 font-size:1.4rem;
                 text-transform:capitalize;
